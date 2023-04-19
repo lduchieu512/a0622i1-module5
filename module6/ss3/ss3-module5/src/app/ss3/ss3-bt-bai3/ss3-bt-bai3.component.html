@@ -1,0 +1,22 @@
+<h1>CALCULATOR</h1>
+<input #firstNumber type="number" placeholder="number1" (change)="calculator(cal.value, firstNumber.value, secondNumber.value)">
+
+<select #cal (change)="calculator(cal.value, firstNumber.value, secondNumber.value)">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select>
+
+<input #secondNumber type="number" placeholder="number2" (change)="calculator(cal.value, firstNumber.value, secondNumber.value)">
+
+<h2>{{result}}</h2>
+
+
+
+
+
+
+
+
+

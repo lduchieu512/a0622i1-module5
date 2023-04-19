@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1460f1d2-9d88-47b6-9c30-7d520b65b54a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss2/thuc_hanh/bai1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss2/thuc_hanh/bai2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss2/thuc_hanh/bai3.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss2/thuc_hanh/bai4/IArea.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss2/thuc_hanh/bai4/Shape.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss2/thuc_hanh/bai4/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss2/thuc_hanh/bai4/rectangle.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2O6Hp0fYp64l9O1OuCCeodclzKu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="F:\CodeGym\A0622I1_mudole_5\module6\node_modules\prettier" />
+    <property name="ts.external.directory.path" value="F:\CodeGym\A0622I1_mudole_5\module6\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\CodeGym\A0622I1_mudole_5\module6\src\ss2\thuc_hanh\bai4" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1460f1d2-9d88-47b6-9c30-7d520b65b54a" name="Default Changelist" comment="" />
+      <created>1680874290634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680874290634</updated>
+      <workItem from="1680874291850" duration="3419000" />
+      <workItem from="1681130620989" duration="138000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/ss2/thuc_hanh/bai1.js" />
+        <option value="$PROJECT_DIR$/src/ss2/thuc_hanh/bai2.js" />
+        <option value="$PROJECT_DIR$/src/ss2/thuc_hanh/bai3.js" />
+        <option value="$PROJECT_DIR$/src/ss2/thuc_hanh/bai4/IArea.js" />
+        <option value="$PROJECT_DIR$/src/ss2/thuc_hanh/bai4/main.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="125" y="60" key="#com.intellij.ide.util.MemberChooser" timestamp="1680876899554">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="125" y="60" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1680876899554" />
+  </component>
+</project>
