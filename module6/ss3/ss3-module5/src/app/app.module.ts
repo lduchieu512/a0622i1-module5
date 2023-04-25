@@ -22,6 +22,13 @@ import { LikesComponent } from './ss4/ss4-bt-bai1/likes/likes.component';
 import { Ss5BtBai1Component } from './ss5/ss5-bt-bai1/ss5-bt-bai1.component';
 import { CountdownTimerComponent } from './ss5/ss5-bt-bai1/countdown-timer/countdown-timer.component';
 import { RatingBarComponent } from './ss5/ss5-bt-bai1/rating-bar/rating-bar.component';
+import { Ss7ThBai1Component } from './ss7/ss7-th-bai1/ss7-th-bai1.component';
+import {AppRoutingModule} from "./app-routing.module";
+import { YoutubePlaylistComponent } from './ss7/ss7-th/youtube-playlist/youtube-playlist.component';
+import { YoutubePlayerComponent } from './ss7/ss7-th/youtube-player/youtube-player.component';
+import { ProductListComponent } from './ss7/ss7-th-bai3/product/product-list/product-list.component';
+import { ProductCreateComponent } from './ss7/ss7-th-bai3/product/product-create/product-create.component';
+import { Ss6BtBai1Component } from './ss6/ss6-bt-bai1/ss6-bt-bai1.component';
 
 @NgModule({
   declarations: [
@@ -44,13 +51,20 @@ import { RatingBarComponent } from './ss5/ss5-bt-bai1/rating-bar/rating-bar.comp
     LikesComponent,
     Ss5BtBai1Component,
     CountdownTimerComponent,
-    RatingBarComponent
+    RatingBarComponent,
+    Ss7ThBai1Component,
+    YoutubePlaylistComponent,
+    YoutubePlayerComponent,
+    ProductListComponent,
+    ProductCreateComponent,
+    Ss6BtBai1Component
   ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        ReactiveFormsModule
-    ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

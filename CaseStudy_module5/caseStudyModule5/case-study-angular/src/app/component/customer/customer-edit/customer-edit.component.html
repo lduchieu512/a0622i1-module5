@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col-md-10 container">
+    <br>
+      <h1 class="font-text-footer">Edit Customer</h1>
+<!--      <div th:if="${mess != null}">-->
+<!--        <h2 class="text-danger" th:text="${mess}"></h2>-->
+<!--      </div>-->
+      <br>
+      <div class="container">
+        <form action="" method="post" >
+          <div class="input-group mb-3">
+            <input hidden type="text" class="form-control me-2" placeholder="Id">
+
+            <span class="input-group-text">Name</span>
+            <input type="text" class="form-control me-2" placeholder="Name" >
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Birthday</span>
+            <input type="date" class="form-control me-2" placeholder="Birthday">
+
+            <span class="input-group-text">Type</span>
+            <select class="me-2" >
+              <option value="">Choose</option>
+              <option>Menber</option>
+              <option>gold</option>
+              <option>silver</option>
+              <option>platinum</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">Id Card</span>
+            <input type="text" class="form-control me-2" placeholder="Id Card">
+
+            <span class="input-group-text">Phone</span>
+            <input type="text" class="form-control me-2" placeholder="Phone" >
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">Email</span>
+            <input type="text" class="form-control me-2" placeholder="Email" >
+
+            <span class="input-group-text">Address</span>
+            <input type="text" class="form-control me-2" placeholder="address" >
+          </div>
+
+          <div class="input-group mb-5 d-flex align-content-center justify-content-center">
+            <button type="submit" class="btn btn-primary">Edit customer</button>
+            <button type="button" class="btn btn-secondary ms-3">
+              <a href="@{/customer/list}" style="text-decoration: none" class="text-light">
+                Back to list customer</a>
+            </button>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>

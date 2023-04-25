@@ -1,0 +1,80 @@
+<div class="row">
+  <div class="col-md-10 container-fluid">
+    <br>
+      <h1 class="font-text-footer">Edit Employee</h1>
+      <!--      <div th:if="${mess != null}">-->
+      <!--        <h2 class="text-danger" th:text="${mess}"></h2>-->
+      <!--      </div>-->
+      <br>
+      <div class="container-fluid p-0">
+        <form action="@{/employee/edit}" method="post">
+          <input hidden type="text" class="form-control me-2" placeholder="Id">
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">Name</span>
+            <input type="text" class="form-control me-2" placeholder="Name">
+
+            <span class="input-group-text">Birthday</span>
+            <input type="date" class="form-control me-2" placeholder="Birthday">
+
+            <span class="input-group-text">Id Card</span>
+            <input type="text" class="form-control me-2" placeholder="Id Card">
+          </div>
+
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">Salary</span>
+            <input type="text" class="form-control me-2" placeholder="Salary">
+
+            <span class="input-group-text">Phone</span>
+            <input type="number" class="form-control me-2" placeholder="Phone">
+
+            <span class="input-group-text">Email</span>
+            <input type="text" class="form-control me-2" placeholder="Email">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">Position</span>
+            <select class="me-2">
+              <option value="">Choose</option>
+              <option>Lễ Tân</option>
+              <option>Phục vụ</option>
+              <option>Chuyên viên</option>
+              <option>Giám sát</option>
+            </select>
+
+            <span class="input-group-text">Education Degree</span>
+            <select class="me-2">
+              <option>Choose</option>
+              <option>Cao đẳng</option>
+              <option>Trung cấp</option>
+              <option>Đại học</option>
+            </select>
+
+            <span class="input-group-text">Division</span>
+            <select class="me-2">
+              <option>Choose</option>
+              <option>Hành chính</option>
+              <option>Phục vụ</option>
+              <option>Quản Lý</option>
+            </select>
+          </div>
+
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">Address</span>
+            <input type="text" class="form-control me-2" placeholder="address">
+          </div>
+
+          <br>
+          <div class="input-group mb-5 d-flex align-content-center justify-content-center">
+            <button type="submit" class="btn btn-primary">Edit employee</button>
+            <button type="button" class="btn btn-secondary ms-3">
+              <a href="@{/employee/list}" style="text-decoration: none" class="text-light">
+                Back to list employee</a>
+            </button>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>

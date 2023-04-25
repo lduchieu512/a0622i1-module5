@@ -1,0 +1,88 @@
+<div class="row">
+  <div class="col-md-10 container-fluid">
+    <br>
+      <h1 class="font-text-footer">Create Service</h1>
+      <!--      <div th:if="${mess != null}">-->
+      <!--        <h2 class="text-danger" th:text="${mess}"></h2>-->
+      <!--      </div>-->
+      <br>
+      <div class="container-fluid p-0">
+        <form action="@{/service/create}" method="post">
+
+          <div class="input-group mb-3">
+            <input hidden type="text" class="form-control me-2" placeholder="ID" >
+
+            <span class="input-group-text">Name</span>
+            <input type="text" class="form-control me-2" placeholder="Name Service">
+
+            <span class="input-group-text">Area</span>
+            <input type="number" class="form-control me-2" placeholder="Area Service">
+
+            <span class="input-group-text">Cost</span>
+            <input type="number" class="form-control me-2" placeholder="Cost Service">
+          </div>
+
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">Max People</span>
+            <input type="number" class="form-control me-2" placeholder="Max People">
+
+            <span class="input-group-text">Name Rent Type</span>
+            <select class="me-2" >
+              <option value="">Choose</option>
+              <option value="">Choose</option>
+              <option value="">Choose</option>
+
+            </select>
+
+            <span class="input-group-text">Service Type</span>
+            <select class="me-2" >
+              <option value="">Choose</option>
+              <option value="">Choose</option>
+              <option value="">Choose</option>
+
+            </select>
+          </div>
+
+
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">Description Other Convenience</span>
+            <input type="text" class="form-control me-2" placeholder="Description Other Convenience">
+<!--            <input type="text" class="form-control me-2" placeholder="Name Service">-->
+
+            <span class="input-group-text">Standard Room</span>
+            <select class="me-2" >
+              <option value="">Choose</option>
+              <option value="normal">Normal</option>
+              <option value="vip">Vip</option>
+            </select>
+
+          </div>
+
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">Pool Area</span>
+            <input type="number" class="form-control me-2" placeholder="Pool Area">
+
+            <span class="input-group-text">Number Of Floors</span>
+            <input type="number" class="form-control me-2" placeholder="Number Of Floors">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Image</span>
+            <input type="number" class="form-control me-2" placeholder="  Image">
+          </div>
+
+
+          <br>
+          <div class="input-group mb-5 d-flex align-content-center justify-content-center">
+            <button type="submit" class="btn btn-primary">Create service</button>
+            <button type="button" class="btn btn-secondary ms-3">
+              <a href="@{/service/list}" style="text-decoration: none" class="text-light">
+                Back to list service</a>
+            </button>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
