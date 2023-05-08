@@ -36,6 +36,10 @@
               <option>silver</option>
               <option>platinum</option>
             </select>
+            <select class="me-2" formControlName="division">
+              <option selected disabled value="">Choose</option>
+              <option *ngFor="let division of divisions" [ngValue]="division">{{division.name}}</option>
+            </select>
           </div>
 
           <div class="input-group mb-3">

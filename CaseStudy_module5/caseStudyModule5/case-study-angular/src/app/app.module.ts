@@ -19,6 +19,8 @@ import { ContractEditComponent } from './component/contract/contract-edit/contra
 import { FacilityCreateComponent } from './component/facility/facility-create/facility-create.component';
 import { FacilityEditComponent } from './component/facility/facility-edit/facility-edit.component';
 import { FacilityListComponent } from './component/facility/facility-list/facility-list.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 // @ts-ignore
 // @ts-ignore
@@ -42,10 +44,13 @@ import { FacilityListComponent } from './component/facility/facility-list/facili
     FacilityEditComponent,
     FacilityListComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule,
+      HttpClientModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,7 +1,7 @@
 import {Facility} from "../model/facility";
 
 export class FacilityDao {
-  static facility: Facility []=[
+  static facilitys: Facility []=[
     {
       id: 'DV-0001',
       name: 'Villa Beach Front',

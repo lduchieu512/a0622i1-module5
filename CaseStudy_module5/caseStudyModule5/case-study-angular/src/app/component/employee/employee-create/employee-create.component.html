@@ -1,81 +1,128 @@
-<div class="row">
-  <div class="col-md-10 container-fluid">
+  <div class="container-fluid">
     <br>
-      <h1 class="font-text-footer">Create Employee</h1>
-<!--      <div th:if="${mess != null}">-->
-<!--        <h2 class="text-danger" th:text="${mess}"></h2>-->
-<!--      </div>-->
-      <br>
-      <div class="container-fluid p-0">
-        <form action="@{/employee/create}" method="post" >
+    <h1 class="font-text-footer">Create Employee</h1>
+    <!--      <div th:if="${mess != null}">-->
+    <!--        <h2 class="text-danger" th:text="${mess}"></h2>-->
+    <!--      </div>-->
+    <br>
+    <div class="container-fluid p-0">
+      <form [formGroup]="employeeFormCreate" (ngSubmit)="createEmployee()">
+        <div class="input-group mb-3">
+          <small class="text-danger mb-0 pb-0"
+                 *ngIf="employeeFormCreate.get('id').invalid && (employeeFormCreate.get('id').touched||employeeFormCreate.get('id').dirty)">
+            ID invalid!!
+          </small>
+          <div class="input-group mb-3">
+            <span class="input-group-text">ID</span>
+            <input type="text" class="form-control me-2" placeholder="Mã nhân viên" formControlName="id">
+          </div>
 
-
+          <small class="text-danger mb-0 pb-0"
+                 *ngIf="employeeFormCreate.get('name').invalid && (employeeFormCreate.get('name').touched||employeeFormCreate.get('name').dirty)">
+            Name invalid!!
+          </small>
           <div class="input-group mb-3">
             <span class="input-group-text">Name</span>
-            <input type="text" class="form-control me-2" placeholder="Name">
+            <input type="text" class="form-control me-2" placeholder="Tên nhân viên" formControlName="name">
+          </div>
 
+          <small class="text-danger mb-0 pb-0"
+                 *ngIf="employeeFormCreate.get('birthday').invalid && (employeeFormCreate.get('birthday').touched||employeeFormCreate.get('birthday').dirty)">
+            Birthday invalid!!
+          </small>
+          <div class="input-group mb-3">
             <span class="input-group-text">Birthday</span>
-            <input type="date" class="form-control me-2" placeholder="Birthday">
+            <input type="date" class="form-control me-2" placeholder="Ngày Sinh" formControlName="birthday">
+          </div>
 
+          <small class="text-danger mb-0 pb-0"
+                 *ngIf="employeeFormCreate.get('idCard').invalid && (employeeFormCreate.get('idCard').touched||employeeFormCreate.get('idCard').dirty)">
+            Id Card invalid!!
+          </small>
+          <div class="input-group mb-3">
             <span class="input-group-text">Id Card</span>
-            <input type="text" class="form-control me-2" placeholder="Id Card">
+            <input type="text" class="form-control me-2" placeholder="Căn cước công dân" formControlName="idCard">
           </div>
+        </div>
 
 
-          <div class="input-group mb-3">
-            <span class="input-group-text">Salary</span>
-            <input type="text" class="form-control me-2" placeholder="Salary">
+        <small class="text-danger mb-0 pb-0"
+               *ngIf="employeeFormCreate.get('salary').invalid && (employeeFormCreate.get('salary').touched||employeeFormCreate.get('salary').dirty)">
+          Salary invalid!!
+        </small>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Salary</span>
+          <input type="text" class="form-control me-2" placeholder="Mức Lương" formControlName="salary">
+        </div>
 
-            <span class="input-group-text">Phone</span>
-            <input type="number" class="form-control me-2" placeholder="Phone">
+        <small class="text-danger mb-0 pb-0"
+               *ngIf="employeeFormCreate.get('phone').invalid && (employeeFormCreate.get('phone').touched||employeeFormCreate.get('phone').dirty)">
+          Phone invalid!!
+        </small>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Phone</span>
+          <input type="text" class="form-control me-2" placeholder="Số điện thoại" formControlName="phone">
+        </div>
 
-            <span class="input-group-text">Email</span>
-            <input type="text" class="form-control me-2" placeholder="Email">
-          </div>
+        <small class="text-danger mb-0 pb-0"
+               *ngIf="employeeFormCreate.get('email').invalid && (employeeFormCreate.get('email').touched||employeeFormCreate.get('email').dirty)">
+          Email invalid!!
+        </small>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Email</span>
+          <input type="text" class="form-control me-2" placeholder="Email" formControlName="email">
+        </div>
 
 
+        <div class="input-group mb-3">
+          <small class="text-danger mb-0 pb-0"
+                 *ngIf="employeeFormCreate.get('position').invalid && (employeeFormCreate.get('position').touched||employeeFormCreate.get('position').dirty)">
+            Position invalid!!
+          </small>
+          <label class="input-group-text">Position</label>
+          <select class="me-2" formControlName="position">
+            <option selected disabled value="">Choose</option>
+            <option *ngFor="let position of positions" [ngValue]="position">{{position.name}}</option>
+          </select>
 
-          <div class="input-group mb-3">
-            <span class="input-group-text">Position</span>
-            <select class="me-2">
-              <option value="">Choose</option>
-              <option>Lễ Tân</option>
-              <option>Phục vụ</option>
-              <option>Chuyên viên</option>
-              <option>Giám sát</option>
-            </select>
+          <small class="text-danger mb-0 pb-0"
+                 *ngIf="employeeFormCreate.get('educationDegree').invalid && (employeeFormCreate.get('educationDegree').touched||employeeFormCreate.get('educationDegree').dirty)">
+            Education Degree invalid!!
+          </small>
+          <span class="input-group-text">Education Degree</span>
+          <select class="me-2" formControlName="educationDegree">
+            <option selected disabled value="">Choose</option>
+            <option *ngFor="let educationDegree of educationDegrees"
+                    [ngValue]="educationDegree">{{educationDegree.name}}</option>
+          </select>
 
-            <span class="input-group-text">Education Degree</span>
-            <select class="me-2">
-              <option>Choose</option>
-              <option>Cao đẳng</option>
-              <option>Trung cấp</option>
-              <option>Đại học</option>
-            </select>
+          <small class="text-danger mb-0 pb-0"
+                 *ngIf="employeeFormCreate.get('division').invalid && (employeeFormCreate.get('division').touched||employeeFormCreate.get('division').dirty)">
+            Division invalid!!
+          </small>
+          <span class="input-group-text">Division</span>
+          <select class="me-2" formControlName="division">
+            <option selected disabled value="">Choose</option>
+            <option *ngFor="let division of divisions" [ngValue]="division">{{division.name}}</option>
+          </select>
+        </div>
 
-            <span class="input-group-text">Division</span>
-            <select class="me-2">
-              <option>Choose</option>
-              <option>Hành chính</option>
-              <option>Phục vụ</option>
-              <option>Quản Lý</option>
-            </select>
-          </div>
+        <small class="text-danger mb-0 pb-0"
+               *ngIf="employeeFormCreate.get('address').invalid && (employeeFormCreate.get('address').touched||employeeFormCreate.get('address').dirty)">
+          Address invalid!!
+        </small>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Address</span>
+          <input type="text" class="form-control me-2" placeholder="Address" formControlName="address">
+        </div>
 
-          <div class="input-group mb-3">
-            <span class="input-group-text">Address</span>
-            <input type="text" class="form-control me-2" placeholder="address" >
-          </div>
-
-          <br>
-          <div class="input-group mb-5 d-flex align-content-center justify-content-center">
-            <button type="submit" class="btn btn-primary">Create employee</button>
-            <button type="button" class="btn btn-secondary ms-3">
-              <a href="@{/employee/list}" style="text-decoration: none" class="text-light">
-                Back to list employee</a>
-            </button>
-          </div>
-        </form>
-      </div>
+        <br>
+        <div class="input-group mb-5 d-flex align-content-center justify-content-center">
+          <button type="submit" class="btn btn-primary" [disabled]="employeeFormCreate.invalid">Create employee</button>
+          <button type="button" class="btn btn-secondary ms-3" routerLink="/employee/list">Back to List </button>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
+
+

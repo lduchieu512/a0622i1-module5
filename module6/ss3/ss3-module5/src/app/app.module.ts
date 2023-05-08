@@ -29,6 +29,10 @@ import { YoutubePlayerComponent } from './ss7/ss7-th/youtube-player/youtube-play
 import { ProductListComponent } from './ss7/ss7-th-bai3/product/product-list/product-list.component';
 import { ProductCreateComponent } from './ss7/ss7-th-bai3/product/product-create/product-create.component';
 import { Ss6BtBai1Component } from './ss6/ss6-bt-bai1/ss6-bt-bai1.component';
+import { Ss7BtBai1Component } from './ss7/ss7-bt-bai1/ss7-bt-bai1.component';
+import { Ss7BtBai2Component } from './ss7/ss7-bt-bai2/ss7-bt-bai2.component';
+import { ProductUpdateComponent } from './ss7/ss7-bt-bai2/product-update/product-update.component';
+import { ProductDeleteComponent } from './ss7/ss7-bt-bai2/product-delete/product-delete.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +61,11 @@ import { Ss6BtBai1Component } from './ss6/ss6-bt-bai1/ss6-bt-bai1.component';
     YoutubePlayerComponent,
     ProductListComponent,
     ProductCreateComponent,
-    Ss6BtBai1Component
+    Ss6BtBai1Component,
+    Ss7BtBai1Component,
+    Ss7BtBai2Component,
+    ProductUpdateComponent,
+    ProductDeleteComponent
   ],
   imports: [
     BrowserModule,
